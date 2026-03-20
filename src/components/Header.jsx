@@ -12,6 +12,10 @@ function Header({ projetoAtualId }) {
                         Inicio
                     </NavLink>
 
+                    <NavLink to="/projetos" className={({ isActive }) => (isActive ? 'ativo' : '')}>
+                        Visualizar projetos
+                    </NavLink>
+
                     {/* Link dinamico aparece apenas quando existe projeto selecionado */}
                     {projetoAtualId ? (
                         <NavLink
